@@ -7,25 +7,6 @@ import backend
 
 
 def get_selected_row(event):
-    # try:
-    #     # # PARA QUE LOS DATOS SEAN ENVIADOS globalmente y no solo en la funcion
-    #     # global selected_tuple
-    #     # # con esto obtenemos el index del evento
-
-    #     # index = tabla.curselection()[0]
-    #     # # aqui obtenemoos todo el valor de la tupla o lista
-    #     # selected_tuple = tabla.get(index)
-    #     # # con este metodo ponemos los datos al hacer click en sus casilas respectivas
-    #     # e1.delete(0, END)
-    #     # e1.insert(END, selected_tuple[1])
-    #     # e2.delete(0, END)
-    #     # e2.insert(END, selected_tuple[2])
-    #     # e3.delete(0, END)
-    #     # e3.insert(END, selected_tuple[3])
-    #     print(selected_tuple)
-    # except:
-    #     pass
-    # click = tabla.item(tabla.selection())
     try:
         item = tabla.selection()[0]
         lista = tabla.item(item)["values"]
@@ -65,7 +46,6 @@ def get_selected_row(event):
         e6_f1.delete(0, END)
         e6_f1.insert(END, fibra)
 
-        # print(nombre, calorias, proteinas)
     except:
         pass
 
@@ -148,8 +128,6 @@ def sumar_tabla2():
         carbohidratos_total += float(tabla2.item(i, 'values')[3])
         grasas_total += float(tabla2.item(i, 'values')[4])
         fibra_total += float(tabla2.item(i, 'values')[5])
-        # print(calorias_total)
-    # nuevo_cal_valor = calorias_total
     l30.config(
         text=f"DIETA\nCal: {round(calorias_total,2)} - Prot: {round(proteinas_total,2)} - Carb: {round(carbohidratos_total,2)} - Grasas: {round(grasas_total,2)} - Fib: {round(fibra_total,2)}")
 
