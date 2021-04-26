@@ -3,6 +3,8 @@ A python GUI App it allows you to search for a meal from a database giving you t
 
 # Screenshot
 ![app](https://user-images.githubusercontent.com/65522523/116036692-b297d980-a62c-11eb-8a2f-334a3ab75d4a.jpg)
+
+![app](https://user-images.githubusercontent.com/65522523/116036288-0eae2e00-a62c-11eb-883b-62e536a9aaed.png)
 # Requirements
 - Python 3.x
 - TKinter
